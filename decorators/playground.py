@@ -1,6 +1,7 @@
 from timer import timed, timed_runs
 from logger import logged
 from memoizer import memoize_fib
+from decorator_class import TimedRuns
 
 
 @memoize_fib
@@ -43,7 +44,11 @@ def fib(n):
 # def call_fib_recursive_memo(n):
 #     return fib_recursive_memo(n)
 
-@timed_runs(10)
+# @timed_runs(10)
+# def call_fib_recursive_memo(n):
+#     return fib_recursive_memo(n)
+
+@TimedRuns(10)
 def call_fib_recursive_memo(n):
     return fib_recursive_memo(n)
 
