@@ -20,6 +20,9 @@ plaintexts = [
     b"LONG LONG LONG LONG LONG LONG",
 ]
 
+print(padder.update(
+    plaintexts[0] + plaintexts[1] + plaintexts[2]) + padder.finalize())
+
 ciphertexts = []
 
 for p in plaintexts:
